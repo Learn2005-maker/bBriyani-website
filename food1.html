@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .sign-in-container{
+        background-color: #f8f1e4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container{
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        text-align: center;
+       /* width: 300px;*/
+    }
+    h2{
+        margin-bottom: 30px;
+        color: orange;
+    }
+label{
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+input{
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+}
+button{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: gray;
+}
+p{
+margin-top: 10px;
+
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+    <div class="sign-in-container">
+<div class="container">
+    <h2>SIGN IN</h2>
+    <form>
+        <label for="Username">Username:</label><input type="text" id="Username" required></input/>
+        <label for="password">Password:</label><input type="password" id="password" required></input/>
+        <button type="submit"> Login In</button>
+<p>Don't have an account?<a href="#"> Sign Up</a></p>
+    </form>
+</div>
+</div>
+</body>
+</html>
